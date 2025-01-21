@@ -1,4 +1,7 @@
 import { type CoreMessage } from "ai";
+
+// CoreMessage is type that represents an object message in a conversation.
+
 import { startServer } from "./server.ts";
 
 const messagesToSend: CoreMessage[] = [

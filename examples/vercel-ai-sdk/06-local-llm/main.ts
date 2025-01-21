@@ -2,6 +2,7 @@ import { createOpenAICompatible } from "@ai-sdk/openai-compatible";
 import { getLocalhost } from "../../_shared/utils.ts";
 import { generateText } from "ai";
 
+// Lets you communicate with Open API compatible models (https://lmstudio.ai/docs/basics)
 const lmstudio = createOpenAICompatible({
   name: "lmstudio",
   baseURL: `http://${getLocalhost()}:1234/v1`,
