@@ -23,7 +23,7 @@ const schema = z.object({
       .array(z.string())
       .describe("The steps to make the recipe"),
   }),
-});
+})
 
 export const createRecipe = async (prompt: string) => {
   const { object } = await generateObject({
